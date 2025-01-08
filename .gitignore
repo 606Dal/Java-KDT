@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,eclipse,java
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,eclipse,java
 
+# Created by https://www.toptal.com/developers/gitignore/api/intellij
+# Edit at https://www.toptal.com/developers/gitignore?templates=intellij
+
 ### Intellij ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
