@@ -18,7 +18,7 @@ public class VendingUI {
 	}
 
 
-	public  void use() {
+	public void use() {
 
 		outer:
 		while (true) {

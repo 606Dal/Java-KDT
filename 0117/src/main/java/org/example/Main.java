@@ -1,5 +1,6 @@
 package org.example;
 
+import lombok.extern.log4j.Log4j2;
 import org.example.domain.KoreanMenu;
 import org.example.domain.Menu;
 import org.example.service.MegaCoffeeMenuService;
@@ -13,6 +14,7 @@ import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+@Log4j2
 public class Main {
 	public static void main(String[] args) {
 /*
@@ -39,6 +41,11 @@ public class Main {
 		MenuUI menuUI = new MenuUI(scanner, service);
 
 		menuUI.execute(); // 메뉴 보여줌.
+
+		
+
+
+
 
 	}
 }
