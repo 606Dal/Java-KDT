@@ -15,7 +15,7 @@ public class FileCopy2 {
 		@Cleanup // 자동으로 try chatch 구문 만들어 줌
 		InputStream fin = new FileInputStream("C:\\zzz\\copy.jpg");
 
-		@Cleanup // 자동으로 try chatch 구문 만들어 줌
+		@Cleanup
 		OutputStream out = new FileOutputStream("C:\\zzz\\copy2.jpg");
 
 		while (true){

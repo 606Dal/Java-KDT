@@ -13,8 +13,7 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 
 		// 마우스 우클릭 이미지 막아놓은 거 가져옴.
-//		String path = "https://image9.coupangcdn.com/image/vendor_inventory/b180/95521b3f022c6c203ce7a887cbb86545bb02c3143438d48fb7cb5d632c6f.jpg";
-		String path = "http://mp4.cine21.com/cine21.com/movie/trailer/2025/01/suho_tr.mp4";
+		String path = "https://image9.coupangcdn.com/image/vendor_inventory/b180/95521b3f022c6c203ce7a887cbb86545bb02c3143438d48fb7cb5d632c6f.jpg";
 		URL url = new URL(path);
 		InputStream in = url.openStream();
 
