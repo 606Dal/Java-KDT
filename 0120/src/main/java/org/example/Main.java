@@ -22,13 +22,13 @@ public class Main {
 
 		// InputStream의 하위 클래스(아래 예시 : FileInputStream)면 다 사용 가능.
 		// 파일 데이터 읽기 (예외 나옴)
-//		InputStream in = new FileInputStream("zzz\\aaa.jpg");
+//		InputStream in = new FileInputStream("C:\\zzz\\aaa.jpg");
 
 		//in이랑 read는 쌍으로 봄.
 
-		// FileOutputStream 이거는 없으면 알아서 만들어 준다고 함.
-		//OutputStream out = new FileOutputStream("C:\\zzz\\copy.jpg");
-		OutputStream out = new FileOutputStream("C:\\zzz\\copy.mp4");
+		// FileOutputStream 만약 파일이 존재하지 않으면 자동으로 파일을 생성해 줌.
+		OutputStream out = new FileOutputStream("C:\\zzz\\copy.jpg");
+		//OutputStream out = new FileOutputStream("C:\\zzz\\copy.mp4");
 
 		while (true){
 
@@ -37,7 +37,7 @@ public class Main {
 
 			System.out.println(data);
 
-			if(data == -1){ // 더이상 읽어야 하는 데이터가 없는 경우.
+			if(data == -1){ // 더 이상 읽어야 하는 데이터가 없는 경우.
 				break;
 			}
 

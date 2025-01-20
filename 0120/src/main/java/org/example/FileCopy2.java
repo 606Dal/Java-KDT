@@ -47,7 +47,7 @@ public class FileCopy2 {
 		}
 
  */
-		/* 이후 방식 이것보다 편한 방식도 있음.
+		/* 이후 방식. 이것보다 편한 방식도 있음.
 		// try with resource = auto close
 		try(InputStream in = new FileInputStream("경로")){
 

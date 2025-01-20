@@ -30,15 +30,15 @@ public class Server1 {
 			System.out.println(clientSocket); // 누가 5555로 들어오면 실행 됨.
 				// Socket[addr=/0:0:0:0:0:0:0:1,port=8503,localport=5555]
 
-			/*
+
 			@Cleanup
 			OutputStream outputStream = clientSocket.getOutputStream();
 
 			// adcii code (소문자 a 97) 로 보내려면 어려움.
 			outputStream.write(97); // 서버가 연결되면 97을 보냄. 1바이트
 
-			 */
-			/*
+
+
 			// 클라이언트에서 보낸 거 읽기.
 			@Cleanup
 			InputStream inputStream = clientSocket.getInputStream();
@@ -47,15 +47,15 @@ public class Server1 {
 			String line = inScanner.nextLine(); // \n이 있을 때까지 읽어옴.
 			System.out.println(line);
 
-			 */
+
 			// 클라이언트로부터 ArrayList 수신
-			@Cleanup
-			ObjectInputStream inputStream = new ObjectInputStream(clientSocket.getInputStream());
-
-			ArrayList<String> receivedMessages = (ArrayList<String>) inputStream.readObject();  // ArrayList 역직렬화
-
-			System.out.println("=========명언 출력==========");
-			System.out.println(receivedMessages.get(0));
+//			@Cleanup
+//			ObjectInputStream inputStream = new ObjectInputStream(clientSocket.getInputStream());
+//
+//			ArrayList<String> receivedMessages = (ArrayList<String>) inputStream.readObject();  // ArrayList 역직렬화
+//
+//			System.out.println("=========명언 출력==========");
+//			System.out.println(receivedMessages.get(0));
 
 		} // end for
 
